@@ -424,20 +424,16 @@ footer>.side>.data {
 @media screen {
     body {
         color: white;
-        background: #000000;
+        background: #1d1d1d;
     }
     main {
         background: black;
     }
     main .collection>.header {
-        background: #000000;
-        border: 2;
-        border-color: 3f3f48;
+        background: #3f3f48;
     }
     main .collection>.card {
-        background: #000000;
-        border: 2;
-        border-color: 2d2e2f;
+        background: #2d2e2f;
     }
     main .collection>.card>.item {
         border-bottom: solid 1px #424242;
