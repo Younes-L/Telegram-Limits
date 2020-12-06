@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: block;
-    src: url(./assets/icons.woff2) format('woff2');
+    src: url(../assets/icons.woff2) format('woff2');
 }
 
 :root {
@@ -13,7 +13,7 @@
 * {
     box-sizing: border-box;
     scrollbar-width: thin;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color:
     font-size: inherit;
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 .backgrounder {
-    background: #86BBFF;
+    background: black;
     display: flex;
     flex-direction: column;
 }
@@ -75,7 +75,7 @@ header::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(./assets/plane.png);
+    background: url(../assets/plane.png);
     background-size: auto 105%;
     background-repeat: no-repeat;
     background-position: 60% 100%;
@@ -89,7 +89,7 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(./assets/limits.png);
+    background: url(../assets/limits.png);
     background-size: auto 40%;
     background-repeat: no-repeat;
     background-position: 5% 100%;
@@ -169,10 +169,10 @@ header .header-box>.explanator>.content>p+p {
 }
 
 main {
-    background: white;
+    background: black;
     border-radius: .5em .5em 0 0;
     z-index: 2;
-    box-shadow: 0 -0.5em 0.5em rgba(0, 0, 0, .05);
+    box-shadow: 0 -0.5em 0.5em rgba(0, 0, 0, 1);
 }
 
 main>.content {
@@ -238,9 +238,11 @@ main .collection {
 main .collection>.header {
     margin: 0 .6em;
     padding: .5em;
+    border: solid 2px #555;
+    border-bottom: 0;
     border-radius: .4em .4em 0 0;
-    background: #F6F6F9;
-    box-shadow: 0 -0.1em 0.2em rgba(22, 31, 93, .07);
+    background: black;
+    box-shadow: 0 -0.1em 0.2em black;
     display: flex;
     align-items: center;
     font-size: 1.25em;
@@ -271,13 +273,13 @@ main .collection>.header>md-icon {
 main .collection>.card {
     background: white;
     border-radius: .5em;
-    box-shadow: 0 -0.08em 0.35em rgba(0, 0, 0, .13);
+    box-shadow: 0 -0.08em 0.35em rgba(0, 0, 0, 1);
     display: block;
 }
 
 main .collection>.card>.item {
     padding: .75em 1.5em;
-    border-bottom: solid 1px #eee;
+    border: solid 2px #333;
     display: flex;
     align-items: center;
     -webkit-column-break-inside: avoid;
@@ -286,7 +288,7 @@ main .collection>.card>.item {
 }
 
 main .collection>.card>.item:last-child {
-    border: 0;
+    border: solid 2px #333;
 }
 
 main .collection>.card>.item>md-icon {
@@ -424,16 +426,16 @@ footer>.side>.data {
 @media screen {
     body {
         color: white;
-        background: #1d1d1d;
+        background: black;
     }
     main {
         background: black;
     }
     main .collection>.header {
-        background: #3f3f48;
+        background: black;
     }
     main .collection>.card {
-        background: #2d2e2f;
+        background: black;
     }
     main .collection>.card>.item {
         border-bottom: solid 1px #424242;
